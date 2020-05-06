@@ -1,0 +1,16 @@
+$listWidth: 35vh;
+@mixin flexboxCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list-container {
+  @include flexboxCenter();
+  margin-top: 2rem;
+}
+
+.todo-list {
+  list-style: none;
+  min-width: $listWidth;
+}

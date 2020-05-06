@@ -1,0 +1,12 @@
+$yellow: rgb(226, 195, 93);
+$orange: rgb(216, 135, 113);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(120deg, $yellow, $orange);
+}

@@ -1,0 +1,33 @@
+$orange: rgb(216, 135, 113);
+$btnTransition: all 0.4s ease;
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  @include flexCenter();
+}
+
+.todo-setup {
+  border: none;
+  background: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.todo-input {
+  @extend .todo-setup;
+}
+.todo-btn {
+  @extend .todo-setup;
+
+  color: $orange;
+  transition: $btnTransition;
+
+  &:hover {
+    color: white;
+    background: $orange;
+  }
+}

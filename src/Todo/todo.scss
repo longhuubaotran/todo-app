@@ -1,0 +1,45 @@
+$orange: #ff6f47;
+$green: rgb(73, 204, 73);
+
+.btn {
+  font-size: 0.7rem;
+  background: $orange;
+  padding: 0.6rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.8s ease-in-out;
+  & li {
+    flex: 1;
+    padding-left: 1rem;
+  }
+}
+
+.complete-btn {
+  @extend .btn;
+  background: $green;
+}
+
+.trash-btn {
+  @extend .btn;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.deleted {
+  transform: translateY(30px) rotate(20deg);
+  opacity: 0.5;
+}

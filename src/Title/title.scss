@@ -1,0 +1,10 @@
+$letterSpace: 0.2rem;
+$fontSize: 1.3rem;
+
+.title {
+  text-align: center;
+  padding-top: 3.5rem;
+  color: white;
+  letter-spacing: $letterSpace;
+  font-size: $fontSize;
+}
